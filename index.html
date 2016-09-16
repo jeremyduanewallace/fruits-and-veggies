@@ -1,26 +1,29 @@
 <!DOCTYPE html>
-<html ng-app>
+<html ng-app="myModule">
     <head>
         <title>Fruit and Veggies</title>
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css">
-
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular.min.js"></script>
+        <!-- angular min.js -->
+        <script src="js/angular.min.js"></script>
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular.min.js"></script> -->
         <script src="js/fruits_and_veggies_test.js"></script>
         <script src="js/app.js"></script>
     </head>
-    <body>
+    <body ng-controller="myController">
         <div class="container">
             <h1>Fruit and Veggies</h1>
             <div class="row">
                 <div class="col-sm-4">
-                    col 1
+                <button class="btn btn-danger" ng-click>Button</button>
+                        {{message}}
+                    fruits
                 </div>
                 <div class="col-sm-4">
-                    col 2
+                    fruits & vegibales
                 </div>
                 <div class="col-sm-4">
-                    col 3
+                    vegitables
                 </div>
             </div>
         </div>
